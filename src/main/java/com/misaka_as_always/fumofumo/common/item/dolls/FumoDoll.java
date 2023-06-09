@@ -38,21 +38,16 @@ public class FumoDoll extends Item {
         }
     }
 
-    public static ItemStack createFumo(Item item, FumoEnum fumoEnum, int color) {
+    public static ItemStack createFumo(Item item, FumoEnum fumoEnum) {
         ItemStack itemStack = new ItemStack(item);
 
         FumoDoll.setFumoType(itemStack, fumoEnum);
-        FumoDoll.setTextColor(itemStack, color);
 
         return itemStack;
     }
 
     public static void setFumoType(ItemStack itemStack, FumoEnum fumoType) {
         fumoType.putBasicNBT(itemStack.getOrCreateTag());
-    }
-
-    public static void setTextColor(ItemStack itemStack, int color) {
-//        itemStack.getOrCreateTag().put("display", ).putInt("color", color);
     }
 
     public static FumoEnum getFumoType(ItemStack itemStack) {

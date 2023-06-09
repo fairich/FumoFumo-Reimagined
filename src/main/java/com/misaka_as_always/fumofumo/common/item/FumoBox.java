@@ -47,7 +47,7 @@ public class FumoBox extends Item {
         FumoEnum[] fumoEnums = (FumoEnum[]) fumoCategory.next();
         int random_int = ThreadLocalRandom.current().nextInt(0, fumoEnums.length);
 
-        return ActionResult.success(FumoDoll.createFumo(ModItems.FUMO.get(), fumoEnums[random_int], 0xFFFFF0));
+        return ActionResult.success(FumoDoll.createFumo(ModItems.FUMO.get(), fumoEnums[random_int]));
     }
 
     public FumoBox(ItemGroup itemGroup) { super(new Properties().stacksTo(1).tab(itemGroup)); }
