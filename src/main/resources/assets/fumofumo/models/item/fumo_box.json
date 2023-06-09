@@ -1,0 +1,70 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"2": "fumofumo:item/fumo_box",
+		"particle": "fumofumo:item/fumo_box"
+	},
+	"elements": [
+		{
+			"name": "бока",
+			"from": [6, 0, 4],
+			"to": [12, 5, 10],
+			"faces": {
+				"north": {"uv": [2.75, 0, 0, 2.75], "texture": "#2"},
+				"east": {"uv": [11.1875, 7.0625, 5.875, 9.9375], "texture": "#2"},
+				"south": {"uv": [2.75, 0, 0, 2.75], "texture": "#2"},
+				"west": {"uv": [11.1875, 7.0625, 5.875, 9.9375], "texture": "#2"},
+				"up": {"uv": [5.5625, 3, 2.8125, 5.75], "texture": "#2"},
+				"down": {"uv": [6.3125, 0, 3.5625, 2.75], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [4, 0, 0],
+			"translation": [-0.5, 4.5, 0.75],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [4, 0, 0],
+			"translation": [0.75, 4.5, 0.75],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_righthand": {
+			"rotation": [-15, 3, 1],
+			"translation": [-1.75, 6.75, 2],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-9, -26, 1],
+			"translation": [-0.25, 6.25, 1.5],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"ground": {
+			"translation": [-0.5, 1.75, 0.25],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"gui": {
+			"rotation": [26, 34, -1],
+			"translation": [-0.25, 7, 0],
+			"scale": [1.64, 1.64, 1.88]
+		},
+		"head": {
+			"rotation": [0, 180, 0],
+			"translation": [1, 14.5, 0]
+		},
+		"fixed": {
+			"rotation": [0, -90, 0],
+			"translation": [-2, 10, 0],
+			"scale": [2, 2, 2]
+		}
+	},
+	"groups": [
+		{
+			"name": "коробка",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}
